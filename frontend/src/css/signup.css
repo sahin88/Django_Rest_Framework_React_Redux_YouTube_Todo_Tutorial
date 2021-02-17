@@ -1,0 +1,79 @@
+.signup-frame {
+  height: 100vh;
+  width: 100vw;
+}
+
+.signup-frame::before {
+  content: "";
+}
+
+.SignupForm {
+  max-width: 380px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 25vh;
+  margin: 0 auto;
+  color: #fff;
+  animation: drop 4s ease-in-out forwards;
+  padding: 10px;
+}
+
+@keyframes drop {
+  0% {
+  }
+  50% {
+    transform: translateY(-175%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.SignupValue {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.f_s input[type="submit"] {
+  width: 100px;
+  color: #fff;
+  font-weight: bolder;
+  border: 2px solid #abebf4;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: #dd331b;
+}
+
+.f_s input[type="submit"]:hover {
+  color: blue;
+}
+
+@media all and (max-width: 560px) {
+  .forms {
+    width: 70%;
+    border: 2px solid green;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 350px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .forms {
+    width: 70%;
+    border: 2px solid blue;
+    margin: auto;
+  }
+
+  .h2 {
+    left: 50px;
+  }
+}

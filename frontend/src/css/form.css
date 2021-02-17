@@ -1,0 +1,73 @@
+.Division-Create-Form {
+  border: 2px solid #e91e63;
+  width: 25%;
+  margin: 50px auto;
+  padding: 50px;
+}
+.Create-Form {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+.Division-Create-Form input[type="text"] {
+  border: 2px solid #00008b;
+  box-sizing: border-box;
+  color: black;
+  position: relative;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+  margin: 8px;
+  border-radius: 4px;
+}
+
+.Division-Create-Form input[type="text"]:focus {
+  border: 2px solid dodgerblue;
+}
+.Create-Form button {
+  cursor: pointer;
+  width: 150px;
+  border: 2px solid blue;
+  width: 150px;
+  color: blue;
+  transition: 0.2s ease-in-out;
+}
+.Create-Form button:hover {
+  border: 2px solid blue;
+  box-sizing: border-box;
+  width: 150px;
+  color: #fff;
+  background-color: blue;
+}
+@media all and (max-width: 760px) {
+  .Division-Create-Form {
+    width: 70%;
+  }
+
+  .Division-Create-Form input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .forms {
+    width: 70%;
+    border: 2px solid blue;
+    margin: auto;
+  }
+
+  .login-user-image {
+    left: 170px;
+  }
+  .h2 {
+    left: 50px;
+  }
+}

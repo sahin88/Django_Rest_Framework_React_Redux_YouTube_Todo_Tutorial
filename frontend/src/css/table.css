@@ -1,0 +1,148 @@
+.f_s input[type="submit"] {
+  width: 100px;
+  color: #fff;
+  font-weight: bolder;
+  border: 2px solid #abebf4;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: #dd331b;
+}
+
+.f_s input[type="submit"]:hover {
+  color: blue;
+}
+
+.Table {
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.Table_horizontal {
+  width: 60vw;
+  min-width: 350px;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  background: #fafafa;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 5px 10px rgba(50, 66, 80, 1);
+  margin-bottom: 50px;
+  overflow: auto;
+}
+.Table_vertical {
+  display: none;
+}
+th,
+td {
+  padding: 20px 12px;
+}
+
+th {
+  background: #e91e63;
+}
+
+tbody:nth-child(odd) {
+  background-color: #ccffeb;
+}
+tbody:nth-child(even) {
+  background-color: #99ffd6;
+}
+
+.Update_Button {
+  border: 2px solid green;
+  box-sizing: border-box;
+  color: green;
+  transition: 0.4s ease-in-out;
+}
+
+.Delete_Button {
+  border: 2px solid #e91e63;
+  box-sizing: border-box;
+  color: #e91e63;
+  transition: 0.4s ease-in-out;
+}
+
+.Delete_Button:hover {
+  background-color: #e91e63;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.Update_Button:hover {
+  background-color: green;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h2 {
+  position: relative;
+  left: -40px;
+}
+@media all and (max-width: 560px) {
+  .Table {
+    padding: 35px;
+  }
+
+  .Table_horizontal {
+    display: none;
+  }
+  .Table_vertical {
+    position: relative;
+    display: block;
+    width: 80vw;
+  }
+
+  .forms {
+    width: 70%;
+    border: 2px solid green;
+    margin: auto;
+  }
+
+  tr {
+    border: 2px solid #aaaa;
+
+    box-sizing: border-box;
+  }
+  td {
+    width: 210px;
+    margin: 2px;
+  }
+  tbody:nth-child(odd) {
+    background-color: #e91e63;
+  }
+  .Division-Create-Form input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .forms {
+    width: 70%;
+    border: 2px solid blue;
+    margin: auto;
+  }
+
+  .login-user-image {
+    left: 170px;
+  }
+  .h2 {
+    left: 50px;
+  }
+}
